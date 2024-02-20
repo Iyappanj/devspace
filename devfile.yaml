@@ -1,0 +1,16 @@
+schemaVersion: 2.2.0
+metadata:
+  name: ansible-demo
+components:
+  - name: tooling-container
+    container:
+      image: bcr-de01.inside.bosch.cloud/bode/molecule
+      memoryRequest: 256M
+      memoryLimit: 6Gi
+      cpuRequest: 250m
+      cpuLimit: 2000m
+      args: ['tail', '-f', '/dev/null']
+      
+events:
+  postStart:
+    - "oc-install"
