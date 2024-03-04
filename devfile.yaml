@@ -1,12 +1,8 @@
 schemaVersion: 2.2.0
 metadata:
-  name: testing
+  name: empty-jswz
+  namespace: admin-che
 components:
-  - name: tooling-container
+  - name: universal-developer-image
     container:
-      image: bcr-de01.inside.bosch.cloud/bode/molecule:nginx
-      memoryRequest: 256M
-      memoryLimit: 6Gi
-      cpuRequest: 250m
-      cpuLimit: 2000m
-      args: ['tail', '-f', '/dev/null']
+      image: quay.io/devfile/universal-developer-image:ubi8-latest
