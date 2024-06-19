@@ -1,0 +1,10 @@
+{
+  "name": "DevContainer",
+  "image": "ubuntu:latest",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "containerEnv": {
+    "RESOURCE_LIMITS": "cpu=1,memory=512Mi"
+  }
+}
