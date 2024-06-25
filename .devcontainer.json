@@ -6,5 +6,10 @@
   },
   "containerEnv": {
     "RESOURCE_LIMITS": "cpu=1,memory=512Mi"
-  }
+  },
+  "customizations": {
+      "devpod": {
+             "podManifestTemplate": "pod_manifest.yaml"
+          }
+}
 }
