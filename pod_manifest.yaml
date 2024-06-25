@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    mylabel: testing_ip
+spec:
+  containers:
+  - args:
+    resources:
+      limits:
+        cpu: 200m
+      requests:
+        cpu: "200m"
