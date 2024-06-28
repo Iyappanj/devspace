@@ -2,6 +2,7 @@
   "name": "DevContainer",
   "image": "ubuntu:latest",
   "workspaceFolder": "/opt/",
+  "WorkspaceVolumeMount": "/workspaces/$WORKSPACE_ID",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
